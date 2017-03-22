@@ -72,8 +72,8 @@ int cameraOnEarth=0;
 int changelight = 0;
 
 
-GLfloat LightAmbient[]  = { 0.0f, 0.0f, 0.0f, 5.0f };
-GLfloat LightDiffuse[]  = { 1.0f, 1.0f, 0.95f, 20.0f };
+GLfloat LightAmbient[]  = { 0.4f, 0.4f, 0.4f, 5.0f };
+GLfloat LightDiffuse[]  = { 1.0f, 1.0f, 1.0f, 1.0f };
 GLfloat LightSpecular[] = { 1.0f, 1.0f, 1.0f, 5.0f };
 GLfloat LightPosition[] = { 60.0f, 60.0f, 80.0f, 0.0f };
 
@@ -328,7 +328,7 @@ void init_opengl(void)
     glShadeModel(GL_SMOOTH);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45.0f,(GLfloat)xres/(GLfloat)yres,0.1f,100.0f);
+    gluPerspective(9.0f,(GLfloat)xres/(GLfloat)yres,0.1f,100.0f);
     glMatrixMode(GL_MODELVIEW);
     //Enable this so material colors are the same as vert colors.
     glEnable(GL_COLOR_MATERIAL);
